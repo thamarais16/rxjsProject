@@ -40,7 +40,7 @@ let obser = Observable.create((observr)=>{
 })
 
 obser.subscribe(
-    (data) => {console.log(data)},
+    (dat) => {console.log(dat)}, 
     (err) =>{ console.log(err)},
     () => {console.log("completed")},
 )

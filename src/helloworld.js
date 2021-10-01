@@ -9,7 +9,7 @@ let hello = of("hello", "world").pipe(
 );
 
 hello.subscribe(
-    data => console.log(data),
+    dat => console.log(dat),
     err => console.log(err),
     () => console.log("completed")
 )
