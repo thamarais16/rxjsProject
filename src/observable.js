@@ -34,7 +34,8 @@ let obser = Observable.create((observr)=>{
         setTimeout(()=>{ observr.next(30)}, 5000);
         setTimeout(()=>{ observr.next(40)}, 7000);
         setTimeout(()=>{ observr.next(50)}, 8000);
-        setTimeout(()=>{ observr.complete()}, 9000);
+        setTimeout(()=>{ observr.next(60)}, 9000);
+        setTimeout(()=>{ observr.complete()}, 10000);
     }catch(e){
         observr.error(e)
     }
